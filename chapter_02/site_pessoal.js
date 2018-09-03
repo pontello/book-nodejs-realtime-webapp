@@ -6,9 +6,8 @@ const path = require('path');
 let router = function(pathname){
     if(pathname && pathname !== '/'){
         let file = path.join(__dirname, `/html/${pathname}.html`);
-        console.log(file);
         if(fs.existsSync(file)) return file;
-        else return path.join(__dirname, '/html/error.html')
+        else return path.join(__dirname, '/html/error.html');
     }
     return path.join(__dirname, '/html/index.html');
 }
