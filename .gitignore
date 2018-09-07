@@ -1,3 +1,4 @@
-./.gitignore
-./.vscode
-./chapter_03/node.exe
+.gitignore
+.vscode
+.vscode/*
+chapter_03/node.exe
